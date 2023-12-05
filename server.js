@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 const upload = multer({dest: __dirname + "/public/images"});
 
 mongoose
-    .connect("mongodb://localhost/breeds")
+    .connect("mongodb+srv://jennastover810:vigmMrzL5iGkqDeU@clusterassignment17.ydj7558.mongodb.net/?retryWrites=true&w=majority")
     .then(()=>{
         console.log("Connected to mongodb");
     })
