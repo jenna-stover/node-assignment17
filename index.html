@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cat Breeds</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="main-header">
+                <h1>Cat Breeds</h1>
+                <div id="cat-animation"></div>
+            </div>
+        </header>
+
+        <div class="columns two-columns">
+            <div id="breed-list" class="columns"></div>
+        </div>
+        <div id="add-breed">
+            <a href="#" id="add-link">Add Breed (+)</a>
+        </div>
+        <div class="columns two-columns">
+            <div id="breed-details-column">
+                <h2>About</h2>
+                <div id="breed-details"></div>
+            </div>
+        </div>
+        <div id="add-edit-breed-container" class="dialog transparent">
+            <span class="close">&times;</span>
+
+            <h3 id="add-edit-title">Breed</h3>
+            <form id="add-edit-breed-form" method="post">
+                <input type="hidden" name="_id" value="-1" />
+                <p>
+                    <label for="name">Breed Name</label>
+                    <input type="text" id="name" name="name" required />
+                </p>
+                <p>
+                    <label for="origin">Origin:</label>
+                    <input type="text" id="origin" name="origin"/>
+                </p>
+                <p>
+                    <label for="lifespan">Lifespan:</label>
+                    <input type="text" id="lifespan" name="lifespan"/>
+                </p>
+                <p>
+                    <label for="img">Upload Image:</label>
+                    <input type="file" id="img" name="img"/>
+                </p>
+
+                <p id="personality-p">
+                    <label class="inline">Personality:</label>
+                    <a href="#" id="add-personality">Add Personality Trait</a>
+                    <section id="personality-boxes"></section>
+                </p>
+                <p id="appearance-p">
+                    <label class="inline">Appearance:</label>
+                    <a href="#" id="add-appearance">Add Physical Trait</a>
+                    <section id="appearance-boxes"></section>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+        
+    </body>
+</html>
